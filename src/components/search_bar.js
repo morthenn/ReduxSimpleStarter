@@ -7,10 +7,10 @@ class SearchBar extends Component {
         this.state = { term: '' };
     }
     render() {
-        return(<div>
-             <input
-             value={this.state.term}
-              onChange={event => this.setState({ term: event.target.value })} />;
+        return (<div className="col-md-5">
+            <input
+                value={this.state.term}
+                onChange={event => this.setState({ term: event.target.value })} />
         </div>);
     }
 }
